@@ -1,9 +1,11 @@
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 
-menuBtn.addEventListener("click", () => {
+const toggleOpen = () => {
   mobileMenu.classList.toggle("open");
-});
+};
+
+menuBtn.addEventListener("click", toggleOpen);
 
 document.addEventListener("click", (e) => {
   if (
