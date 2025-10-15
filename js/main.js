@@ -7,8 +7,6 @@ const toggleOpen = () => {
 
 menuBtn.addEventListener("click", toggleOpen);
 
-console.log("Hola mundo");
-
 document.addEventListener("click", (e) => {
   if (
     mobileMenu.classList.contains("open") &&
