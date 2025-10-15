@@ -5,9 +5,7 @@ const toggleOpen = () => {
   mobileMenu.classList.toggle("open");
 };
 
-menuBtn.addEventListener("click", toggleOpen);
-
-document.addEventListener("click", (e) => {
+const closeMobileMenuOnOutsideClick = (e) => {
   if (
     mobileMenu.classList.contains("open") &&
     !mobileMenu.contains(e.target) &&
@@ -15,4 +13,7 @@ document.addEventListener("click", (e) => {
   ) {
     mobileMenu.classList.remove("open");
   }
-});
+};
+
+menuBtn.addEventListener("click", toggleOpen);
+document.addEventListener("click", closeMobileMenuOnOutsideClick);
