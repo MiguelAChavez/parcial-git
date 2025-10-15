@@ -2,7 +2,7 @@ const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 
 const toggleOpen = () => {
-  mobileMenu.classList.toggle("open");
+  mobileMenu.classList.toggle("ope");
 };
 
 const closeMobileMenuOnOutsideClick = (e) => {
