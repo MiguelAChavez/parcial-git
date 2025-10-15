@@ -1,0 +1,504 @@
+/* Nav */
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  transition: all 0.3s;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  background-color: var(--color-background);
+  box-shadow: 0 2px 0px var(--color-shadow);
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--color-foreground);
+}
+
+.nav-logo span {
+  color: #007bff;
+}
+
+.nav-items {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: var(--color-foreground);
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.nav-items a:hover {
+  color: var(--color-primary);
+}
+
+.menu-btn {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 0 0;
+  color: var(--color-foreground);
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.852);
+  backdrop-filter: blur(6px);
+  border-top: 1px solid #eee;
+}
+.mobile-menu.open {
+  display: block;
+}
+.mobile-menu a {
+  display: block;
+  padding: 12px 24px;
+  text-decoration: none;
+  color: #222;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+.mobile-menu a:hover {
+  color: #007bff;
+}
+
+/* Main */
+
+.section-full {
+  min-height: 100vh;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-padding {
+  padding: 80px 16px;
+}
+.container-center {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  background: #e2e8f0;
+  color: #222;
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px var(--color-shadow);
+}
+
+/* Título principal */
+.main-title {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 6rem;
+  letter-spacing: -2px;
+  margin: 12px 0 16px;
+}
+.main-title-accent {
+  color: #007bff;
+  display: block;
+  margin: -2rem 0 0;
+}
+
+/* Descripción */
+.main-desc {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+/* Botones */
+.btn-group-vertical {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+/* Botón base */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 14px 32px;
+  border-radius: 8px;
+  min-width: 200px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 8px;
+  border: none;
+}
+
+/* Botón primario */
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Botón outline */
+.btn-outline-primary {
+  background: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.btn-icon {
+  margin-right: 8px;
+  font-size: 1.4rem;
+}
+
+/* Redes sociales */
+.social-group {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding-top: 24px;
+}
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  color: #222;
+  border: none;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 1px 4px var(--color-shadow);
+}
+.social-btn:hover {
+  background: #e2e8f0;
+  color: #007bff;
+}
+
+/* Habilidades */
+
+/* Cambia grid-cards de grid a flex */
+.grid-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+/* Ajusta el ancho de las card-skill para flex */
+.card-skill {
+  max-width: 250px;
+  background: #f8fafc;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 32px 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Icono */
+.icon-bg {
+  display: inline-block;
+  background: #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.icon-bg ion-icon {
+  font-size: 2.5rem;
+}
+
+/* Título de tarjeta */
+.card-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Lista de skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+/* Badge de skill */
+.skill-badge {
+  background: #e1edfd;
+  color: #222;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+/* Proyectos */
+.bg-light {
+  background: #f3f4f6;
+}
+.grid-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+.card-project {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #0001;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.card-img {
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.card-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.card-desc {
+  color: #555;
+  font-size: 1rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-small {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 8px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-light {
+  background: transparent;
+  color: #222;
+  border: 2px solid #e2e8f0;
+}
+
+/* Contacto */
+/* Contacto */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card formulario */
+.card-form {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 32px;
+}
+.form-title {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+.form-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+.btn-block {
+  width: 100%;
+  padding: 14px 0;
+}
+
+/* Card contacto */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.card-contact {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 24px;
+}
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.contact-icon {
+  padding: 12px;
+  background: #e6f0ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: #007bff;
+}
+.contact-title {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
+}
+.contact-desc {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Footer */
+.footer {
+  background: #f3f4f6;
+  padding: 2rem 1rem;
+}
+.footer-text {
+  color: #555;
+  font-size: 1rem;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Sección y contenedor */
+.section-padding {
+  padding: 80px 16px;
+}
+.container-xl {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.desc-lg {
+  font-size: 1.15rem;
+  max-width: 600px;
+  color: #555;
+}
+.heading-lg {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+.text-muted {
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-items {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .main-title {
+    font-size: 3.5rem;
+  }
+}
